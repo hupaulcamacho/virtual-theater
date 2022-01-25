@@ -46,9 +46,10 @@ class MovieModal extends Component {
                 </div>
                 <div className="info2">
                     <p className="description">{movie.video.description}</p>
-                    {/* {(
+                    {(
                         this.props.getElapsedTime(difference) < 0 ?
-                            <Link onClick={e => this.props._closed(e)} className='movie-link'>Closed</Link>
+                            // <Link onClick={e => this.props._closed(e)} className='movie-link'>Closed</Link>
+                            <a className='movie-link'>Closed</a>
                             :
                             <div>
                                 <div className='link-container'>
@@ -57,22 +58,9 @@ class MovieModal extends Component {
                                         to={`/showroom/${movie.video_url}/${title}/${difference}`}>
                                         Enter Theater
                                     </Link>
-                                    <Link
-                                        className='movie-link'
-                                        to={`/privateroom/${movie.video_url}/${title}_${privateId} /${difference}/private`}>
-                                        Enter Private Room
-                                    </Link>
-                                </div>
-                                <div className = 'copyPaste'>
-                                    <textarea   ref={(textarea) => this.textArea = textarea}
-                                    value={`https://remotetheater.herokuapp.com/privateroom/${movie.video_url}/${movie[0]}_${privateId} /${difference}/private`} className='greyLink'></textarea>
-                                    <Link className='movie-link' onClick={() => this.copyCodeToClipboard()}>
-                                         Copy to Clipboard
-                                    </Link>
                                 </div>
                             </div>
-
-                    )} */}
+                    )}
                 </div>
             </div>
         )
