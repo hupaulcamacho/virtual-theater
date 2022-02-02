@@ -145,6 +145,8 @@ textarea{
 
 .info1,
 .info2 {
+    text-align: center;
+    color:white;
     padding: 1em;
 }
 

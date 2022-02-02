@@ -19,9 +19,12 @@ a {
   text-decoration: none;
 }
 
+.main-nav {
+  padding: 1em;
+  background-color: #2e1d6d;
+}
 
-
-.nav-link{
+.nav-links {
   padding-left: 1em;
   padding-right: 1em;
   padding: 0.5em;
@@ -29,6 +32,10 @@ a {
   margin-left: 1em;
   border-radius: 5px;
   background-color: #472da6;
+}
+
+.nav-links:hover{
+  background-color: #6443da;
 }
 
 .username {

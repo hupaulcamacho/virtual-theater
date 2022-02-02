@@ -112,14 +112,12 @@ function MovieIndex() {
                 </Popup>
             )
         }
-        // setMovComponents(movieComponents)
         return movieComponents
     }
 
     // function calls
     useEffect(() => {
         getMovies();
-        // createMovieComponents(movies);
     }, [])
 
     return (

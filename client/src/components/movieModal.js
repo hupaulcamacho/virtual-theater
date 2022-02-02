@@ -55,7 +55,7 @@ class MovieModal extends Component {
                                 <div className='link-container'>
                                     <Link
                                         className='movie-link'
-                                        to={`/showroom/${movie.video_url}/${title}/${difference}`}>
+                                        to={`/theater/${movie.video.video_url}/${movie.video.title}/${difference}`}>
                                         Enter Theater
                                     </Link>
                                 </div>
